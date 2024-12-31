@@ -1,0 +1,215 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "half_height": 4,
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 6,
+        "min_inclusive": 2
+      }
+    },
+    "state_provider": {
+      "fallback": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:netherrack"
+        }
+      },
+      "rules": [
+        {
+          "if_true": {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:any_of",
+              "predicates": [
+                {
+                  "type": "minecraft:solid",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "fluids": "minecraft:lava",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ]
+                }
+              ]
+            }
+          },
+          "then": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "botania:mutated_grass"
+            }
+          }
+        },
+        {
+          "if_true": {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:any_of",
+              "predicates": [
+                {
+                  "type": "minecraft:solid",
+                  "offset": [
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "fluids": "minecraft:lava",
+                  "offset": [
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "fluids": "minecraft:lava",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ]
+                }
+              ]
+            }
+          },
+          "then": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:dirt"
+            }
+          }
+        },
+        {
+          "if_true": {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:any_of",
+              "predicates": [
+                {
+                  "type": "minecraft:solid",
+                  "offset": [
+                    0,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "fluids": "minecraft:lava",
+                  "offset": [
+                    0,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "fluids": "minecraft:lava",
+                  "offset": [
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "fluids": "minecraft:lava",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ]
+                }
+              ]
+            }
+          },
+          "then": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:dirt"
+            }
+          }
+        },
+        {
+          "if_true": {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:any_of",
+              "predicates": [
+                {
+                  "type": "minecraft:solid",
+                  "offset": [
+                    0,
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "fluids": "minecraft:lava",
+                  "offset": [
+                    0,
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "fluids": "minecraft:lava",
+                  "offset": [
+                    0,
+                    3,
+                    0
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "fluids": "minecraft:lava",
+                  "offset": [
+                    0,
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "fluids": "minecraft:lava",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ]
+                }
+              ]
+            }
+          },
+          "then": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:dirt"
+            }
+          }
+        }
+      ]
+    },
+    "target": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:netherrack"
+      ]
+    }
+  }
+}

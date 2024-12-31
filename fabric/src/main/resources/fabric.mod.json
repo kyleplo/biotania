@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "biotania",
+  "version": "${version}",
+  "name": "Biotania",
+  "description": "Biome mod adding biomes themed around Botania and using its blocks",
+  "authors": [
+    "kyleplo"
+  ],
+  "license": "MIT",
+  "icon": "assets/biotania/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "kyleplo.biotania.BiotaniaInit"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20 <1.21",
+    "biolith": "*"
+  }
+}

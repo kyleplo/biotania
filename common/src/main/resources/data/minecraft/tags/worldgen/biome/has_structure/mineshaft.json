@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "biotania:shattered_wasteland",
+      "required": false
+    },
+    {
+      "id": "biotania:metamorphic_caves",
+      "required": false
+    },
+    {
+      "id": "biotania:botanical_fields",
+      "required": false
+    },
+    {
+      "id": "biotania:mystical_forest",
+      "required": false
+    }
+  ]
+}

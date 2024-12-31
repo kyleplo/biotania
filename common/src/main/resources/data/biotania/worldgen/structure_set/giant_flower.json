@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 9032954,
+    "separation": 0,
+    "spacing": 1,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "biotania:giant_flower",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "biotania:mystical_forest",
+      "required": false
+    },
+    {
+      "id": "biotania:botanical_fields",
+      "required": false
+    }
+  ]
+}

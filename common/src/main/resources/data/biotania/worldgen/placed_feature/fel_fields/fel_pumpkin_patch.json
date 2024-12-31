@@ -1,0 +1,12 @@
+{
+  "feature": "biotania:fel_fields/fel_pumpkin_patch",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 1
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

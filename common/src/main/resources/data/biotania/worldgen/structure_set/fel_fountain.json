@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 723489,
+    "separation": 4,
+    "spacing": 8,
+    "spread_type": "linear"
+  },
+  "structures": [
+    {
+      "structure": "biotania:fel_fountain",
+      "weight": 1
+    }
+  ]
+}
