@@ -19,6 +19,6 @@ pluginManagement {
 rootProject.name = "biotania"
 include("common")
 include("fabric")
-//include("forge")
+include("forge")
 //include("neoforge")
 include("datapack")

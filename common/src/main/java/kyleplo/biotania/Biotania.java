@@ -15,6 +15,8 @@ public class Biotania {
   public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
   public static void init() {
+    Biotania.LOGGER.info("Registering Biotania biomes...");
+
     final ParameterRange FULL_RANGE = MultiNoiseUtil.ParameterRange.of(-1.0f, 1.0f);
 
     Config config = Config.init();
@@ -50,5 +52,7 @@ public class Biotania {
           FULL_RANGE,
           0L));
     }
+
+    Biotania.LOGGER.info("Biotania biomes registered!");
   }
 }
