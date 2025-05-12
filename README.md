@@ -1,3 +1,3 @@
-This mod's codebase is based upon [@gniftygnome's Biolith Examples](https://github.com/gniftygnome/biolith-examples). This mod is currently only for Fabric 1.20.1, as that is the only version both Botania and Biolith support. This mod's codebase is designed to be compatible with Forge and NeoForge as well, so once Botania updates or if Biolith is backported, I will publish builds for those versions.
+This mod's codebase is based upon [@gniftygnome's Biolith Examples](https://github.com/gniftygnome/biolith-examples).
 
 [A full description of this mod can be found on Modrinth.](https://modrinth.com/mod/biotania/)
