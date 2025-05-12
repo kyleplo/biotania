@@ -14,10 +14,11 @@ import com.google.gson.GsonBuilder;
 
 public class Config {
     private static Gson gson = new GsonBuilder().setPrettyPrinting().create();
+    private static String currentVersion = "1.0.1";
 
     //Config Default Values
 
-    public String CONFIG_VERSION_DO_NOT_TOUCH_PLS = "${version}";
+    public String CONFIG_VERSION_DO_NOT_TOUCH_PLS = currentVersion;
 
     public boolean logWhenLoaded = true;
     public String comment = "Enable or disable any biome individually.";
@@ -39,8 +40,8 @@ public class Config {
                     Config.class
                 );
 
-                if (!config.CONFIG_VERSION_DO_NOT_TOUCH_PLS.equals("${version}")) {
-                    config.CONFIG_VERSION_DO_NOT_TOUCH_PLS = "${version}";
+                if (!config.CONFIG_VERSION_DO_NOT_TOUCH_PLS.equals(currentVersion)) {
+                    config.CONFIG_VERSION_DO_NOT_TOUCH_PLS = currentVersion;
 
                     BufferedWriter writer = new BufferedWriter(
                         new FileWriter(configPath.toFile())

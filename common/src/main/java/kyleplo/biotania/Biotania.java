@@ -33,13 +33,13 @@ public class Biotania {
           0L));
     }
     if (config.generateMysticalForest) {
-      BiomePlacement.replaceOverworld(BiomeKeys.FOREST, BiotaniaBiomeKeys.MYSTICAL_FOREST, 0.3);
+      BiomePlacement.replaceOverworld(BiomeKeys.FOREST, BiotaniaBiomeKeys.MYSTICAL_FOREST, 0.2);
     }
     if (config.generatePetalPastures) {
-      BiomePlacement.replaceOverworld(BiomeKeys.PLAINS, BiotaniaBiomeKeys.BOTANICAL_FIELDS, 0.3);
+      BiomePlacement.replaceOverworld(BiomeKeys.PLAINS, BiotaniaBiomeKeys.BOTANICAL_FIELDS, 0.25);
     }
     if (config.generateShatteredWastes) {
-      BiomePlacement.replaceOverworld(BiomeKeys.SAVANNA, BiotaniaBiomeKeys.SHATTERED_WASTELAND, 0.3);
+      BiomePlacement.replaceOverworld(BiomeKeys.SAVANNA, BiotaniaBiomeKeys.SHATTERED_WASTELAND, 0.25);
     }
     if (config.generateFelFields) {
       BiomePlacement.addNether(BiotaniaBiomeKeys.FEL_FIELDS,
